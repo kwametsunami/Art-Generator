@@ -33,9 +33,11 @@ app.displayArt = (info) => {
                 if (infoReturn.data.image_id == null) {
                     location.reload();
                 } else {
-                    document.getElementById("artTitle").innerHTML = `${artWorkTitle} — ${artWorkDate}`;
-                    document.getElementById("artist").innerHTML = `${artWorkArtist}, ${artWorkCountry}`;
-                    document.getElementById("medium").innerHTML = `${artWorkMedium}`;
+                    document.getElementById("artTitle").innerHTML = `${artWorkTitle === null ? "Unknown" : artWorkTitle} — ${artWorkDate === null ? "Unknown" : artWorkDate}`;
+                    document.getElementById("artist").innerHTML = `${artWorkArtist === null ? "Unknown" : artWorkArtist}, ${artWorkCountry === null ? "Unknown" : artWorkCountry}`;
+                    document.getElementById("medium").innerHTML = `${artWorkMedium === null ? "Unknown" : artWorkMedium}`;
+                    const work = document.getElementById("work")
+                    work.style.display = "inline";
                     const loader = document.querySelector(".loader")
                     loader.style.display = "none";
                 }               
@@ -48,8 +50,12 @@ app.displayArt = (info) => {
 app.refreshButton = () => {
     const refresh = document.querySelector('#reloadPage')
     refresh.addEventListener('click', () => {
-        window.location.reload(true);
-        console.log("click!")
+        // window.location.reload(true);
+        const work = document.getElementById("work")
+        work.style.display = "none";
+        const loader = document.querySelector(".loader")
+        loader.style.display = "inline-block";
+        app.getArt();
     });
 }
 
