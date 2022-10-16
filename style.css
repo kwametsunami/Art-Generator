@@ -16,7 +16,7 @@ html {
 
 body {
     height: 100vh;
-background-color: #fffaeb;
+    background-color: #fffaeb;
 }
 
 .title {
@@ -211,6 +211,9 @@ footer a {
   /* media queries */
 
   @media (max-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
     header {
         display: flex;
         justify-content: space-between;
@@ -249,21 +252,26 @@ footer a {
   }
 
 @media (max-width: 825px) {
-        .bottom {
-                width: 100%;
-            }
-        
-            .textInfo {
-                align-items: center;
-                text-align: center;
-            }
+    html {
+        font-size: 55%;
+    }
+    .bottom {
+        width: 100%;
+    }
+    .textInfo {
+        align-items: center;
+            text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
     .title {
         width: 20%;
     }
     .imageWrapper {
-        height: 20vh;
+        height: 23vh;
     }
 }
