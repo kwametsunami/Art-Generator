@@ -16,7 +16,6 @@ app.getArt = () => {
 app.displayArt = (info) => {
     let grab = info.data[0].id
     const modUrl = `https://api.artic.edu/api/v1/artworks/${grab}`
-    console.log(modUrl)
     fetch(modUrl)
         .then(infoData => infoData.json())
             .then(infoReturn => {
@@ -28,7 +27,6 @@ app.displayArt = (info) => {
                 let artWorkMedium = infoReturn.data.medium_display;
                 let artWorkAlt = infoReturn.data.alt_text;
                 document.getElementById("work").src = `https://www.artic.edu/iiif/2/${artWork}/full/843,/0/default.jpg`;
-                console.log(`https://www.artic.edu/iiif/2/${artWork}/full/843,/0/default.jpg`)
                 document.getElementById("work").alt = artWorkAlt;
                 if (infoReturn.data.image_id == null) {
                     location.reload();
