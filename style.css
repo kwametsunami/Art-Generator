@@ -16,12 +16,7 @@ html {
 
 body {
     height: 100vh;
-    /* background: rgb(253, 244, 220);
-    background: radial-gradient(circle, rgba(253, 244, 220, 0.975249474789916) 85%, rgba(255, 255, 255, 1) 100%);
-    background-size: 30%; */
-    background: rgb(255, 250, 235);
-    background: radial-gradient(circle, rgba(255, 250, 235, 1) 72%, rgba(255, 255, 255, 1) 100%);
-    background-size: 30%;
+background-color: #fffaeb;
 }
 
 .title {
@@ -98,6 +93,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 75vh;
 }
 
 .textInfo {
@@ -110,7 +106,7 @@ body {
 
 img {
     object-fit: contain;
-    height: 70vh;
+    height: 100%;
     width: 50vw;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -207,4 +203,40 @@ footer a {
     50% { height: 100%;}
     75% { height: 100%;}
     100% { height: 0%;}
+  }
+
+  /* media queries */
+
+  @media (max-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title {
+        position: relative;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .title h1 {
+        margin-bottom: 0;
+    }
+    .title p {
+        align-self: center;
+        margin-top: 7.5px;
+    }
+    .clickables {
+        position: relative;
+        top: 0;
+        right: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    .imageWrapper {
+        height: 50vh;
+    }
+    img {
+        width: 100%;
+    }
   }
