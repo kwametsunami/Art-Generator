@@ -12,6 +12,9 @@ html {
     margin: 0 auto;
     width: 80%;
     animation: fadeIn 0.3s;
+}
+
+body {
     height: 100vh;
 }
 
@@ -117,8 +120,16 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 0;
+    margin: 7px 0;
 }
+
+h3 {
+    font-size: 1.75rem;
+    margin: 7px 0;
+}
+
 .bottom {
     width: 75%;
 }
@@ -127,6 +138,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 footer p {
