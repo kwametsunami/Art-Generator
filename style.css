@@ -72,7 +72,7 @@ background-color: #fffaeb;
 .dropdownContent {
     display: none;
     position: absolute;
-    outline: 2px solid #ff0000e3;
+    outline: 2px solid rgba(255, 0, 0, 0.752);
     background-color: #fff9e8;
     right: 15px;
     width: 25vw;
@@ -180,14 +180,14 @@ footer a {
     width: 30px;
     height: 30px;
     position: absolute;
-    border: 4px solid #ff0000e3;
+    border: 4px solid rgba(255, 0, 0, 0.752);
     animation: loader 5s infinite ease;
   }
   .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #ff0000e3;
+    background-color: rgba(255, 0, 0, 0.752);
     animation: loader-inner 5s infinite ease-in;
   }
   
