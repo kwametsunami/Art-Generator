@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Generator</title>
+    <link rel="icon" type="image/x-icon" href="./assets/redSquare.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <div class="title">
+            <h1>Art Generator</h1>
+            <p>powered by the ArtIC API</p>
+        </div>
+        <div class="clickables">
+            <button id="reloadPage"><img src="./assets/refresh.png"></button>
+            <div class="dropdown">
+            <button id="pageInfo"><img src="./assets/info.png"></button>
+                <div class="dropdownContent">
+                    <h3>Info</h3>
+                <p>Art Generator is a website that generates works of art from the Art Institute of Chicago's collection via their public API. Some titles may not have images due to them being off view for purposes of treatment, preperation for exhibitions, or being loaned out to other institutions. If no image loads, please refresh your browser or click on the button above.</p>
+                <p>For more information on the Art Institute of Chicago's public follow this <a href='https://www.artic.edu/open-access/public-api'>link.</a> 
+                </p>
+                </div>
+            </div>
+        </div>
+</header>
+<main>
+    <div class="imageWrapper">
+        <img id="work">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <div class ="bottom">
+        <div class="textInfo">
+            <h1 id="artTitle"></h1>
+            <h2 id="artist"></h2>
+            <h2 id="medium"></h2>
+        </div>
+    </div>
+</main>
+<footer>
+    <p class="tag"><a href="https://junocollege.com/">created at juno college</a></p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
