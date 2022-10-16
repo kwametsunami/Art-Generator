@@ -100,9 +100,10 @@ background-color: #fffaeb;
 .textInfo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     margin-top: 30px;
+    text-align: center;
 }
 
 img {
@@ -137,7 +138,7 @@ h4 {
 }
 
 .bottom {
-    width: 75%;
+    width: 100%;
 }
 
 footer {
@@ -263,6 +264,6 @@ footer a {
         width: 20%;
     }
     .imageWrapper {
-        height: 35vh;
+        height: 26vh;
     }
 }
