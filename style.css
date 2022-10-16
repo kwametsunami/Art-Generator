@@ -16,6 +16,12 @@ html {
 
 body {
     height: 100vh;
+    /* background: rgb(253, 244, 220);
+    background: radial-gradient(circle, rgba(253, 244, 220, 0.975249474789916) 85%, rgba(255, 255, 255, 1) 100%);
+    background-size: 30%; */
+    background: rgb(255, 250, 235);
+    background: radial-gradient(circle, rgba(255, 250, 235, 1) 72%, rgba(255, 255, 255, 1) 100%);
+    background-size: 30%;
 }
 
 .title {
@@ -63,10 +69,6 @@ body {
     background-color: #ff0000e3;
 }
 
-#pageInfo:hover {
-    transform: scale(1.5);
-}
-
 .dropdown:hover .dropdownContent {
     display: block;
 }
@@ -75,7 +77,7 @@ body {
     display: none;
     position: absolute;
     outline: 2px solid #ff0000e3;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff9e8;
     right: 15px;
     width: 25vw;
     padding: 12px 16px;
@@ -129,6 +131,11 @@ h2 {
 h3 {
     font-size: 1.75rem;
     margin: 7px 0;
+}
+
+h4 {
+    font-size: 2.5rem;
+    text-decoration: underline;
 }
 
 .bottom {
